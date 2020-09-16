@@ -1,0 +1,20 @@
+<p>contactitem works!</p>
+<div class="list-group-item clearfix">
+  <div class="pull-left">
+      <h4 class="list-group-item-heading">{{ [index+1] }}</h4>
+      <p class="list-group-item-text">Name: {{ user.name }}</p>
+      <p class="list-group-item-text">Email: {{ user.email }}</p>
+      <p class="list-group-item-text">Phone: {{ user.phone }}</p>
+      <br>
+      <button type="button" class="btn btn-success btn-xs" [routerLink]="['../view/', index]" > View </button>
+      <button type="button" class="btn btn-info btn-xs" [routerLink]="['../edit/', index]"> Update </button>
+      <button type="button" class="btn btn-danger btn-xs" (click) = "onDeleteUser()"> Delete </button>
+
+    </div>
+</div>
+
+
+
+
+
+
